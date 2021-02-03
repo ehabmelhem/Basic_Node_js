@@ -1,21 +1,16 @@
 {
-  "name": "Basic_Node_js",
+  "name": "Back-End",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"cd Back-End && node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ehabmelhem/Basic_Node_js.git"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ehabmelhem/Basic_Node_js/issues"
-  },
-  "homepage": "https://github.com/ehabmelhem/Basic_Node_js#readme"
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
