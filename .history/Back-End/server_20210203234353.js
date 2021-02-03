@@ -20,7 +20,7 @@ app.get("/delete", (req, res) => {
   for (let i = 0; i <= id; i++) {
     elments.splice(i, 1);
   }
-  res.send({ messege: "delete has been success full" });
+  res.send({ messege:"" });
 });
 
 const port = 3000;

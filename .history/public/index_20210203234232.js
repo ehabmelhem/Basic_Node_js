@@ -12,7 +12,7 @@ form.addEventListener("submit", async (e) => {
         var h4 = document.createElement("h4");
         var btn = document.createElement("button");
         h4.innerText = text.value;
-        btn.innerText = "delete";
+        btn.innerText = "delet";
         btn.id = counter;
         btn.addEventListener("click", async (e) => {
           div.remove();
@@ -41,7 +41,7 @@ fetch("/get-elemnts")
       var h4 = document.createElement("h4");
       var btn = document.createElement("button");
       h4.innerText = elm.text;
-      btn.innerText = "delete";
+      btn.innerText = "delet";
       btn.id = counter;
       btn.addEventListener("click", async (e) => {
         div.remove();

@@ -12,15 +12,9 @@ form.addEventListener("submit", async (e) => {
         var h4 = document.createElement("h4");
         var btn = document.createElement("button");
         h4.innerText = text.value;
-        btn.innerText = "delete";
-        btn.id = counter;
-        btn.addEventListener("click", async (e) => {
+        btn.innerText = "delet";
+        btn.addEventListener("click", (e) => {
           div.remove();
-          await fetch(`/delete?id=${btn.id}`)
-            .then((r) => r.json())
-            .then((data) => {
-              console.log(data);
-            });
         });
         div.appendChild(h4);
         div.appendChild(btn);
@@ -41,15 +35,13 @@ fetch("/get-elemnts")
       var h4 = document.createElement("h4");
       var btn = document.createElement("button");
       h4.innerText = elm.text;
-      btn.innerText = "delete";
+      btn.innerText = "delet";
       btn.id = counter;
-      btn.addEventListener("click", async (e) => {
+      btn.addEventListener("click", (e) => {
         div.remove();
-        await fetch(`/delete?id=${btn.id}`)
+        fetch(`/delete?id=${btn.id}`)
           .then((r) => r.json())
-          .then((data) => {
-            console.log(data);
-          });
+          .then(data);
       });
       div.appendChild(h4);
       div.appendChild(btn);
